@@ -1,0 +1,112 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   background-color: #10141e; 
+}
+
+.card-account{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.2rem;
+    width: 340px;
+    border-radius: 1rem;
+    background-color: #161D2F;
+}
+
+h2{
+    font-family: outfit,sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+    opacity: 0.9;
+}
+ 
+.input-email, .input-repeat{
+    border-bottom: 1px solid #5A698F;
+    background-color: #161D2F;
+}
+
+
+
+input{
+    padding: 15px;
+    outline: 0;
+    border: 0;
+    background-color:#161D2F ;
+ } 
+
+
+.password{
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid #5A698F;
+}
+.placeholder{
+    background-color: #10141e;
+}
+.password h4{
+    font-weight: 300;
+    color: #FC4747;
+    opacity: 0.6;
+    padding-inline: 1rem;
+    
+}
+
+
+h5{
+    font-weight: 300;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+button{
+    border: 0;  
+    border-radius: 0.2rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color:#FC4747;  
+    color: #eadada;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #FFFFFF;
+    color: #161D2F;
+}
+
+.account{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:0.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: #FC4747;
+    opacity: 0.6;
+}
+
+
+@media only screen and (max-width: 768px){
+   
+   .card{
+    justify-content: flex-start;
+    padding-top: 70px;
+   }
+
+   .card-account{
+    width: 300px;
+   }
+}
+
+@media only screen and (min-width: 768px){
+ 
+    .card-account{
+        width: 340px;
+    }
+}
