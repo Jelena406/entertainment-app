@@ -1,0 +1,86 @@
+@import url('./styles/MovieCard.scss');
+@import url('./styles/Sidebar.scss');
+@import url('./styles/Search.scss');
+@import url('./styles/Login-SignUp.scss');
+@import url('./styles/Page.scss');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--Dark-Blue, #10141E);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+body {
+  background: var(--Dark-Blue, #10141e);
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+}
+
+#root {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  padding: 2rem 0 2rem 2rem;
+
+  @media screen and (max-width: 960px) {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+}
+#root {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  padding: 2rem 0 2rem 2rem;
+  @media screen and (max-width: 960px) {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+}
+
+main{
+  overflow-x: hidden;
+}
+
+@media screen and (max-width:768px) {
+  main{
+    padding-inline: 15px;
+   }
+  
+}
+
+@media screen and (min-width:768px) {
+  main{
+    padding-inline: 24px;
+   }
+  
+}
+
+@media screen and (min-width:992px) {
+  main{
+    width: calc(100% - 35px);
+    margin-left: 2rem;
+    padding-inline: 0;
+   }
+  
+}
